@@ -11,6 +11,13 @@ pipeline
                     }
                 }
             }
+              stage('install') {
+                       steps{
+                          script{
+                              sh " sudo npm install "
+                    }
+                }
+            }
                stage('Build')
                {
                               steps {
